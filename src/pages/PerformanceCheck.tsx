@@ -41,6 +41,7 @@ function PerformanceCheck() {
   return (
     <div>
       <h2>User List</h2>
+      <div>(Please open console to see render logs)</div>
       <button onClick={handleIncrement}>Increment: {count}</button>
       <UserListComponent users={users} />
     </div>
