@@ -119,3 +119,25 @@ it('should NOT re-render UserList when count changes', async () => {
 | Functional Update | 避免閉包捕獲舊的 state 值 |
 
 **核心概念：** 將不相關的 state 拆分到不同元件，並用 `React.memo` 包裝，讓每個元件只關心自己需要的資料。
+
+---
+
+## 開發工具：Claude Code
+
+本專案使用 [Claude Code](https://claude.ai/claude-code) 輔助開發。
+
+### 主要用途
+
+- **程式碼審查** - 分析效能問題、找出潛在 bug
+- **重構建議** - 拆分元件、優化架構
+- **測試撰寫** - 產生單元測試、邊界值測試
+- **文件產生** - README、註解
+- **CI/CD 設定** - GitHub Actions workflow
+
+### 常用指令
+
+| 指令 | 說明 |
+|------|------|
+| `@檔案路徑` | 引用特定檔案進行討論 |
+| `@資料夾/` | 引用整個資料夾 |
+| 選取程式碼 | IDE 中選取後直接詢問 |
