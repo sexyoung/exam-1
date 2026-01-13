@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import RunningClock from './pages/RunningClock';
 import IsCycleCheck from './pages/IsCycleCheck';
@@ -18,14 +18,14 @@ function Home() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/running-clock" element={<RunningClock />} />
         <Route path="/is-cycle-check" element={<IsCycleCheck />} />
         <Route path="/performance-check" element={<PerformanceCheck />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
